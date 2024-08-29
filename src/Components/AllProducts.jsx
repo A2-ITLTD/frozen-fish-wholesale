@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import i1 from "../Images/it1.jpg";
 import i2 from "../Images/it2.jpg";
 import i3 from "../Images/it3.jpg";
@@ -24,7 +25,7 @@ const AllProducts = () => {
                     <div className="card-actions justify-end">
                     <div className="badge badge-outline">Frozen Fish</div>
                     <div className="badge badge-outline">Black Tiger Shrimp</div>
-                    <div className="badge badge-outline bg-green-200 ">Buy Now</div>
+                    <Link to={`/item/1`} className="badge badge-outline bg-green-200 ">Buy Now</Link>
                     </div>
                 </div>
             </div>
@@ -44,7 +45,7 @@ const AllProducts = () => {
                     <div className="card-actions justify-end">
                     <div className="badge badge-outline">Frozen Fish</div>
                     <div className="badge badge-outline">Rock lobster</div>
-                    <div className="badge badge-outline bg-green-200 ">Buy Now</div>
+                    <Link to={`/item/2`} className="badge badge-outline bg-green-200 ">Buy Now</Link>
                     </div>
                 </div>
             </div>
@@ -64,7 +65,7 @@ const AllProducts = () => {
                     <div className="card-actions justify-end">
                     <div className="badge badge-outline">Frozen Fish</div>
                     <div className="badge badge-outline">Freshwater Drum</div>
-                    <div className="badge badge-outline bg-green-200 ">Buy Now</div>
+                    <Link to={`/item/3`} className="badge badge-outline bg-green-200 ">Buy Now</Link>
                     </div>
                 </div>
             </div>
@@ -84,7 +85,7 @@ const AllProducts = () => {
                     <div className="card-actions justify-end">
                     <div className="badge badge-outline">Frozen Fish</div>
                     <div className="badge badge-outline">Scylla Serrata</div>
-                    <div className="badge badge-outline bg-green-200 ">Buy Now</div>
+                    <Link to={`/item/4`} className="badge badge-outline bg-green-200 ">Buy Now</Link>
                     </div>
                 </div>
             </div>
@@ -104,7 +105,7 @@ const AllProducts = () => {
                     <div className="card-actions justify-end">
                     <div className="badge badge-outline">Frozen Fish</div>
                     <div className="badge badge-outline">Tilapia</div>
-                    <div className="badge badge-outline bg-green-200 ">Buy Now</div>
+                    <Link to={`/item/5`} className="badge badge-outline bg-green-200 ">Buy Now</Link>
                     </div>
                 </div>
             </div>
