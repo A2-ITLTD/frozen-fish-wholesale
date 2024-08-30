@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import bg5 from '../Images/bg5.jpg';
-
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneSquareAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 const Contact = () => {
     useEffect(() => {
         document.title = "Contact Us";
@@ -46,14 +48,39 @@ const Contact = () => {
                 backgroundSize: 'cover', 
                 backgroundPosition: 'center'
             }}>
-            <div className="flex flex-col md:flex-row justify-between gap-5 md:gap-20 items-center w-full md:w-4/5 mx-auto py-5 md:py-10">
-                <div className="">
-                    <div>
-                        <h1 className="text-2xl md:text-6xl font-bold text-white text-ceter pb-0 md:pb-10">Get in Touch!</h1>
+
+            {/* cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-16 items-center py-16 px-5 md:px-28">
+                {/* card 1 */}
+                <div className="card glass text-gray-800 w-auto md:w-96 h-full">
+                    <div className="card-body">
+                        <FaLocationDot className="text-4xl"/>
+                        <h2 className="card-title">Address</h2>
+                        <p>Demo Address</p>
                     </div>
                 </div>
+                {/* card 2 */}
+                <div className="card glass text-gray-800 w-auto md:w-96 h-full">
+                    <div className="card-body">
+                        <FaPhoneSquareAlt className="text-4xl" />
+                        <h2 className="card-title">Phone Number</h2>
+                        <p>+880000000</p>
+                    </div>
+                </div>
+                {/* card 3 */}
+                <div className="card glass text-gray-800 w-auto md:w-96 h-full">
+                    <div className="card-body">
+                        <MdEmail className="text-4xl" />
+                        <h2 className="card-title">Email Address</h2>
+                        <p>Email@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <h1 className="text-2xl md:text-5xl text-white font-bold text-center italic pb-5">Get In Touch</h1>
+            {/* form */}
+            <div className="w-full py-5 px-5 md:px-28 flex items-center justify-center">
                 {/* form */}
-                <div className="w-full md:w-1/2 glass p-3 md:p-10 rounded-md">
+                <div className="w-full md:w-2/3 glass p-3 md:p-10 rounded-md">
                 <form onSubmit={handleOrder} className='flex flex-col w-full gap-5 border-none'>
                     <input type="text" name="user_name" placeholder='Name' className='py-2 px-5 rounded text-base text-black' />
                     <input 
@@ -92,7 +119,7 @@ const Contact = () => {
                     
                     <textarea type="text" name="message" placeholder='Any Message or change about product ?' className='py-2 px-5  rounded text-base text-black textarea textarea-bordered textarea-2xl w-full'></textarea>
                     
-                    <button type="submit" value="Send" className='bg-orange-400 text-white font-semibold p-5 rounded-md hover:bg-slate-700' >Send</button>
+                    <button type="submit" value="Send" className='bg-green-400 text-white font-semibold p-5 rounded-md hover:bg-slate-700' >Send</button>
                 </form>
                 </div>
             </div>

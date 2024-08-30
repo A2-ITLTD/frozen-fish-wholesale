@@ -1,15 +1,28 @@
 import { Link } from "react-router-dom";
+import bg10 from "../Images/bg10.jpg";
 import bg1 from "../Images/bg1.jpg";
 import bg2 from "../Images/bg2.jpg";
 import bg3 from "../Images/bg3.jpg";
+import bg7 from "../Images/bg7.jpg";
 import orangebg from "../Images/orangebg.jpg";
 import { FaRegCircleDot } from "react-icons/fa6";
 import { AiOutlineAlibaba } from "react-icons/ai";
+import { FaStar } from "react-icons/fa";
 import i1 from "../Images/it1.jpg";
 import i2 from "../Images/it2.jpg";
 import i3 from "../Images/it3.jpg";
 import i4 from "../Images/it4.jpg";
 import i5 from "../Images/it5.jpg";
+
+import d1 from "../Images/d1.jpg";
+import d2 from "../Images/d2.jpg";
+import d3 from "../Images/d3.jpg";
+import d4 from "../Images/d4.jpg";
+import d5 from "../Images/d5.jpg";
+
+import fish from "../Images/fish.png";
+import user from "../Images/user.png";
+
 
 const Banner = () => {
     return (
@@ -19,12 +32,12 @@ const Banner = () => {
             <img src={bg1} className='w-full h-full object-cover object-left md:object-center' />
             <div className='absolute left-28 top-20 md:top-20 text-white flex flex-col justify-center text-center '>
                 <div className="flex flex-col gap-6 items-center">
-                    <h1 className="text-5xl font-semibold">Welcome to the leading source for premium frozen fish. <br /> 
+                    <h1 className="text-5xl font-semibold italic">Welcome to the leading source for premium frozen fish. <br /> 
                     <span className="text-lg ">
                     Where quality meets unbeatable prices—delivering the freshest catch from sea to your doorstep, all year round.
                     </span>
                     </h1>
-                    <div className="divider"><FaRegCircleDot className='text-6xl' /></div>
+                    <div className="divider divider-warning"><FaRegCircleDot className='text-6xl' /></div>
                     <button className='w-fit items-center text-green-600 font-bold text-3xl hover:text-black bg-white px-8 py-3 rounded-md'>
                         <Link to="/allproducts">Shop Now</Link>
                     </button>
@@ -40,55 +53,10 @@ const Banner = () => {
                     </Link>
                 </div>
             </section>
-            {/* about */}
-            <section className='mt-28 px-5 md:px-28'>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-12 justify-center items-center'>
-                <div>
-                    <div className='w-full h-ull rounded-md'>
-                        <img src={bg2} className='w-full h-full object-cover object-left rounded-md' />
-                    </div>
-                </div>
-                <div className='flex flex-col gap-6 justify-start items-center'>
-                    <h1 className='text-4xl font-bold text-green-700 text-wrap pb-5'>To accomplish our goal, we offer:</h1>
-
-                <div className="collapse collapse-arrow bg-base-200 text-gray-700">
-                    <input type="radio" name="my-accordion-2" defaultChecked />
-                    <div className="collapse-title text-xl font-medium">Top Frozen Fish Supplier and Exporter</div>
-                    <div className="collapse-content">
-                        <p>We are a trusted supplier and exporter of high-quality frozen fish, including eel, tuna, and mackerel. Our advanced facilities ensure consistent quality and freshness for global markets. Based in Chittagong, Bangladesh, we are committed to delivering excellence.</p>
-                    </div>
-                </div>
-
-                <div className="collapse collapse-arrow bg-base-200 text-gray-700">
-                    <input type="radio" name="my-accordion-2" />
-                    <div className="collapse-title text-xl font-medium">Global Sourcing and Distribution</div>
-                    <div className="collapse-content">
-                        <p>We source our frozen fish from top fisheries across the globe, ensuring competitive pricing and fast delivery. Our distribution network covers major markets in Asia, Europe, and North America.</p>
-                    </div>
-                </div>
-
-                <div className="collapse collapse-arrow bg-base-200 text-gray-700">
-                    <input type="radio" name="my-accordion-2" />
-                    <div className="collapse-title text-xl font-medium">Contact Us for Quotes and Orders</div>
-                    <div className="collapse-content">
-                        <p>Reach out to our team today for a quote on our frozen fish products. With over a decade of experience, we are dedicated to meeting your seafood needs efficiently and reliably.</p>
-                    </div>
-                </div>
-
-            </div>
-
-                <div className='bg-green-700 rounded-md p-4 md:p-12 flex flex-col gap-5'>
-                    <h1 className='text-3xl font-bold text-white text-wrap pb-5'>Our primary project</h1>
-                    <p className='text-base font-normal text-white text-justify text-wrap'>
-                    We take immense pride in delivering sugar that is not only 100% pure but also sustainably sourced, ensuring that every grain aligns with our commitment to ethical practices. Our sugar is completely free from additives, guaranteeing that you receive only the best, natural sweetness in its most authentic form. Each batch undergoes a meticulous refining process designed to preserve the sugar’s inherent sweetness and vibrant color, making it a perfect choice for a wide range of culinary applications. Whether you're a home baker crafting delicate pastries, a professional chef creating gourmet dishes, or simply someone with a discerning palate, our sugar is crafted to elevate your culinary creations with unparalleled quality and taste.
-                    </p>
-
-                </div>
-            </div>
-            </section>
             {/* best setting products */}
-            <section className='mt-28 px-5 md:px-28'>
-                <h1 className="text-4xl text-green-700 text-center font-semibold my-16">Best Products</h1>
+            <section className='mt-20 px-5 md:px-28'>
+                <h1 className="text-4xl text-green-700 text-center font-semibold italic">Frozen Fish Wholesale Specials</h1>
+                <p className="text-base text-gray-700 py-3 text-center font-semibold pb-12">Frozen Fish, Seafood Delivered To Your Door & Online Fishmonger</p>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center items-center'>
                 {/* 1 */}
                 <div className="card bg-base-100 w-full md:w-96 h-fulls shadow-xl">
@@ -192,6 +160,37 @@ const Banner = () => {
                 </div>
             </div>
             </section>
+            {/* featred products */}
+            <section className='mt-20 px-5 md:px-28'>
+                <h1 className="text-4xl text-green-700 text-center font-semibold italic">To Make Your Best Meal</h1>
+                <p className="text-base text-gray-700 py-3 text-center font-semibold pb-12">The freshest and most exciting recipes
+                </p>
+                <div className="flex items-center gap-5">
+                    <div className="w-1/2 h-full">
+                        <img src={d1} alt="" />
+                    </div>
+                    <div className="w-1/2 h-full grid grid-cols-2 gap-5">
+                        <img src={d2} className="w-full h-full object-cover object-center" />
+                        <img src={d3} className="w-full h-full object-cover object-center" />
+                        <img src={d4} className="w-full h-full object-cover object-center" />
+                        <img src={d5} className="w-full h-full object-cover object-center" />
+                    </div>
+                </div>
+            </section>
+            {/* Why Frozen Fish is Better? */}
+            <section className='mt-28 px-5 md:px-28'>
+                <div className="flex flex-col md:flex-row items-center gap-10">
+                    <div className="w-full md:w-2/5">
+                        <img src={fish} alt="" />
+                    </div>
+                    <div className="w-full md:w-3/5 text-right flex flex-col gap-5">
+                        <h1 className="text-2xl md:text-5xl text-green-700 font-bold italic">Why Frozen Fish is Better?</h1>
+                        <p className='text-wrap text-justify'>We are a family-owned company that delivers new, frozen fish right to your door. We currently stock over 200 different items from around the world, enabling us to welcome you into our freezers.
+                        Our fish is frozen at sea within 4 hours of being captured, ensuring the freshest and tastiest seafood. Fresh fish takes several days to travel from the water to the supermarket or fishmonger, losing its freshness along the way. Frozen fish retains all of the nutrients and goodness that the same fish would have if eaten fresh from the sea.
+                        We can also provide a larger variety of fish by offering frozen fish from all over the world. This means you can try something new without having to wait for your favourite fish to be in season. We don't just market frozen eels; we specialise in jellied eels, and Gordon Ramsay has even paid us a visit to learn from Frank.</p>
+                    </div>
+                </div>
+            </section>
             {/* our speciality */}
             <section className='mt-28 px-5 md:px-28'>
                 <div
@@ -208,6 +207,56 @@ const Banner = () => {
                         <p className='text-wrap text-justify md:text-center'>We offer a wide range of premium frozen fish products, including eel, tuna, and mackerel, all sourced directly from trusted fisheries. Benefit from direct shipments with no broker fees, ensuring the highest quality and freshness. Our stringent quality controls also guarantee no cross-contamination. For more information or to check availability in your region, please contact your local distributor.</p>
                         <Link to="/about" className="mt-4 px-6 py-2 w-fit bg-green-400 text-white rounded-lg">Learn More</Link>
                     </div>
+                </div>
+            </section>
+            {/* testimonials */}
+            <section className='my-28 px-5 md:px-28'>
+                <h1 className="text-2xl md:text-5xl text-green-700 font-bold text-center italic pb-12">Testimonials</h1>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                      <div className="p-5 bg-base-200 flex flex-col gap-5 rounded-md">
+                        <div className="flex items-center gap-3 text-yellow-400">
+                            <FaStar /><FaStar /><FaStar /><FaStar />
+                        </div>
+                        <div>
+                            <p className="text-justify">
+                            "MCS Global Seafood Trading has been our go-to supplier for premium frozen fish for over two years now. Their products are consistently fresh, and the quality is unmatched. We've seen a noticeable improvement in our dishes since switching to their eel and mackerel. The team's professionalism and commitment to timely deliveries make them a pleasure to work with. Highly recommended!"
+                            </p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                                <img src={user} className="w-12" />
+                                <p> — Chef Daniel R., Gourmet Seafood Restaurant</p>
+                            </div>
+                      </div>
+
+                      <div className="p-5 bg-base-200 flex flex-col gap-5 rounded-md">
+                        <div className="flex items-center gap-3 text-yellow-400">
+                            <FaStar /><FaStar /><FaStar /><FaStar />
+                        </div>
+                        <div>
+                            <p className="text-justify">
+                            "As a seafood distributor, I rely on suppliers who can deliver both quality and consistency. MCS Global Seafood Trading has exceeded my expectations every time. The fish arrives perfectly frozen, without any signs of freezer burn or damage. My clients are always impressed with the taste and freshness. Plus, the customer service is top-notch, always ready to assist with any queries."
+                            </p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                                <img src={user} className="w-12" />
+                                <p> Emily S., Wholesale Distributor</p>
+                            </div>
+                      </div>
+
+                      <div className="p-5 bg-base-200 flex flex-col gap-5 rounded-md">
+                        <div className="flex items-center gap-3 text-yellow-400">
+                            <FaStar /><FaStar /><FaStar /><FaStar />
+                        </div>
+                        <div>
+                            <p className="text-justify">
+                            "I've been purchasing frozen fish from MCS Global Seafood Trading for my catering business, and I couldn't be happier. The variety they offer is impressive, and the quality is always excellent. Their attention to detail, from packaging to delivery, ensures that I receive my orders in perfect condition every time. It's clear that they care about their customers and the products they deliver."
+                            </p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                                <img src={user} className="w-12" />
+                                <p> Michael L., Catering Business Owner</p>
+                            </div>
+                      </div>
                 </div>
             </section>
         </div>

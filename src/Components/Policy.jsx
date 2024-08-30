@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import bg4 from '../Images/bg4.jpg';
+import bg9 from '../Images/bg9.jpg';
+import fish2 from '../Images/fish2.png';
 const Policy = () => {
     useEffect(() => {
         document.title = "Privacy & Policy";
@@ -13,7 +14,8 @@ const Policy = () => {
                         <p className='text-lg font-normal text-gray-700 text-wrap'>At Frozen Fish Wholesale, we are committed to safeguarding your privacy. This Privacy Policy outlines how we collect, use, disclose, and protect your personal information when you visit our website or engage with our services. By accessing or using our website, you agree to the terms of this policy.</p>
                     </div>
                     <div className='flex flex-col gap-5 text-left pl-10 pt-10'>
-                        <h1 className='text-xl font-bold  text-green-700 text-wrap flex gap-4 items-center'>
+                        <h1 className='text-xl font-bold  text-green-700 text-wrap flex gap-0 items-center'>
+                        <img src={fish2} className="w-12 h-12" /> 
                         Information We Collect
                         </h1>
                         <p className='text-sm font-normal text-gray-700 text-justify text-wrap pl-8'>
@@ -21,7 +23,8 @@ const Policy = () => {
 
                         <b>Non-Personal Information:</b> This includes data like your IP address, browser type, and browsing behavior on our website. This information helps us improve our site and services.
                         </p>
-                        <h1 className='text-xl font-bold  text-green-700 text-wrap flex gap-4 items-center'>
+                        <h1 className='text-xl font-bold  text-green-700 text-wrap flex gap-0 items-center'>
+                        <img src={fish2} className="w-12 h-12" /> 
                         How We Use Your Information
                         </h1>
                         <p className='text-sm font-normal text-gray-700 text-justify text-wrap pl-8'>
@@ -29,19 +32,22 @@ const Policy = () => {
 
                         <b>Communication:</b> We may use your contact details to send you promotional offers, updates, or important information about our services. You can opt out of these communications at any time.
                         </p>
-                        <h1 className='text-xl font-bold  text-green-700 text-wrap flex gap-4 items-center'>
+                        <h1 className='text-xl font-bold  text-green-700 text-wrap flex gap-0 items-center'>
+                        <img src={fish2} className="w-12 h-12" /> 
                         Data Security
                         </h1>
                         <p className='text-sm font-normal text-gray-700 text-justify text-wrap pl-8'>
                         We implement robust security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. Despite our efforts, no method of transmission over the internet is entirely secure, and we cannot guarantee absolute security.
                         </p>
-                        <h1 className='text-xl font-bold  text-green-700 text-wrap flex gap-4 items-center'>
+                        <h1 className='text-xl font-bold  text-green-700 text-wrap flex gap-0 items-center'>
+                        <img src={fish2} className="w-12 h-12" /> 
                         Third-Party Sharing
                         </h1>
                         <p className='text-sm font-normal text-gray-700 text-justify text-wrap pl-8'>
                         We do not sell or rent your personal information to third parties. However, we may share your data with trusted partners who assist in providing our services, such as payment processors and shipping companies. These partners are required to protect your information and use it only for the purposes specified by us.
                         </p>
-                        <h1 className='text-xl font-bold  text-green-700 text-wrap flex gap-4 items-center'>
+                        <h1 className='text-xl font-bold  text-green-700 text-wrap flex gap-0 items-center'>
+                        <img src={fish2} className="w-12 h-12" /> 
                         Changes to This Policy
                         </h1>
                         <p className='text-sm font-normal text-gray-700 text-justify text-wrap pl-8'>
@@ -51,7 +57,7 @@ const Policy = () => {
                 </div>
                 <div className='w-full md:w-1/2'>
                     <div className='w-full h-full rounded-md'>
-                        <img src={bg4} className='w-full h-full object-cover object-left rounded-md' />
+                        <img src={bg9} className='w-full h-full object-cover object-center rounded-md' />
                     </div>
                 </div>
             </div>

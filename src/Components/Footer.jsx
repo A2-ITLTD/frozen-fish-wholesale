@@ -10,22 +10,22 @@ import alibaba from '../Images/alibaba_logo.png';
 import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
-        <div className="w-full mt-16">
+        <div className="w-full">
            <footer className="footer bg-base-200 text-base-content py-10 px-5 md:px-28">
             <nav>
-                <h6 className="footer-title text-[#045364] text-xl">Registration Number</h6>
+                <h6 className="footer-title text-green-700 text-xl">Registration Number</h6>
                 <a className="link link-hover">MCS Global General Trading</a>
                 <a className="link link-hover">Company Number: DSCC/018914</a>
                 <a className="link link-hover">TRIPLE A SUPPLY CO LTD</a>
                 <a className="link link-hover">UK Company Number: 14802825</a>
             </nav>
             <nav>
-                <h6 className="footer-title text-[#045364] text-xl">Contact Info</h6>
+                <h6 className="footer-title text-green-700 text-xl">Contact Info</h6>
                 <a className="link link-hover">Bangladesh, Thailand & UK</a>
-                <a className="link link-hover">info@sugarbulksale.com</a>
+                <a className="link link-hover"></a>
             </nav>
             <nav>
-                <h6 className="footer-title text-[#045364] text-xl">Company</h6>
+                <h6 className="footer-title text-green-700 text-xl">Company</h6>
                 <Link to="/policy"><a className="link link-hover">Privacy & Policy</a></Link>
                 <Link to="/about"><a className="link link-hover">About us</a></Link>
                 <Link to="/contact"><a className="link link-hover">Contact</a></Link>

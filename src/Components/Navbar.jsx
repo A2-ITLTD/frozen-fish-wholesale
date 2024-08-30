@@ -60,11 +60,12 @@ const Navbar = () => {
                     </li>
                     <li><Link to="/contact"><a>Contact Us</a></Link></li>
                     <li><Link to="/about"><a>About Us</a></Link></li>
+                    <li><Link to="/about"><a>Shipping & Delivery</a></Link></li>
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Growers</a>
-                </div>
+                {/* <div className="navbar-end">
+                    <a className="btn text-green-700 text-lg">Shipping & Delivery</a>
+                </div> */}
             </div>
         </div>
     );
