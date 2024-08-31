@@ -12,6 +12,7 @@ import Details from "./Components/Details";
 import Contact from "./Components/Contact";
 import About from "./Components/About";
 import Policy from "./Components/Policy";
+import Shipping from "./Components/Shipping";
  
 const router = createBrowserRouter([ 
  { 
@@ -37,6 +38,9 @@ const router = createBrowserRouter([
   },
   { path: "/policy",
     element: <Policy></Policy>
+  },
+  { path: "/shipping",
+    element: <Shipping></Shipping>
   },
 ]
  }, 

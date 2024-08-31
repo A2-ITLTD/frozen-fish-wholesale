@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import logo from "../Images/fishlogo.png";
 const Navbar = () => {
     return (
         <div >  
@@ -38,9 +38,9 @@ const Navbar = () => {
                         <li><Link to="/about"><a>About Us</a></Link></li>
                     </ul>
                     </div>
-                    <Link to="/" className="btn btn-ghost text-xl">
-                        {/* <img src={logo} className="w-full h-full" /> */}
-                        <h1>Frozen Fish</h1>
+                    <Link to="/" className=" text-xl">
+                        <img src={logo} className="w-20 h-20" />
+                        {/* <h1>Frozen Fish</h1> */}
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -60,7 +60,7 @@ const Navbar = () => {
                     </li>
                     <li><Link to="/contact"><a>Contact Us</a></Link></li>
                     <li><Link to="/about"><a>About Us</a></Link></li>
-                    <li><Link to="/about"><a>Shipping & Delivery</a></Link></li>
+                    <li><Link to="/shipping"><a>Shipping & Delivery</a></Link></li>
                     </ul>
                 </div>
                 {/* <div className="navbar-end">
