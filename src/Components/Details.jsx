@@ -32,17 +32,17 @@ const Details = () => {
 
     return (
         <div className="mt-5 md:mt-16 px-5 md:px-28"> 
-            <div className='text-left text-4xl font-medium pb-14 text-green-700'>
+            <div className='text-left text-xl md:text-4xl font-medium pb-0 md:pb-14 text-green-700'>
                 <h1>{newItem.name}</h1>
             </div>
-            <div className="mt-2 flex flex-col md:flex-row gap-10">
+            <div className="mt-2 flex flex-col md:flex-row gap-3 md:gap-10">
                 {/* images */}
-                <div className="w-full md:w-1/2 p-5 rounded-md">
+                <div className="w-full md:w-1/2 p-0 md:p-5 rounded-md">
                     <img src={newItem.image} className="rounded-md w-full" />
                 </div>
                 {/* details */}
                 <div className="w-full md:w-1/2 bg-gray-100 p-5 md:p-5 shadow-md text-left flex flex-col gap-3">
-                    <div className="flex items-start justify-between ">
+                    <div className="flex flex-col md:flex-row items-start justify-between ">
                         <div className="flex flex-col gap-3">
                             <h1>Category: {newItem.category}</h1>
                             <h1 className="font-bold">Current Price: {newItem.current_price}</h1>
@@ -58,7 +58,7 @@ const Details = () => {
                 </div>
             </div>
             <h1 className="py-5 text-3xl">More Details</h1>
-            <div className="flex items-start gap-10">
+            <div className="flex flex-col md:flex-row items-start gap-10">
                 <div className="overflow-x-auto w-full ">
                     <table className="table table-zebra border-2 border-green-300">
                         <tbody>

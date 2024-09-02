@@ -36,6 +36,7 @@ const Navbar = () => {
                         </li>
                         <li><Link to="/contact"><a>Contact Us</a></Link></li>
                         <li><Link to="/about"><a>About Us</a></Link></li>
+                        <li><Link to="/shipping"><a>Shipping & Delivery</a></Link></li>
                     </ul>
                     </div>
                     <Link to="/" className=" text-xl">

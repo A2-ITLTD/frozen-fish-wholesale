@@ -30,9 +30,9 @@ const Banner = () => {
            {/* main banner */}
            <section className="relative w-full h-[700px]">
             <img src={bg1} className='w-full h-full object-cover object-left md:object-center' />
-            <div className='absolute left-28 top-20 md:top-20 text-white flex flex-col justify-center text-center '>
+            <div className='absolute left-5 md:left-28 top-20 md:top-20 text-white flex flex-col justify-center text-center '>
                 <div className="flex flex-col gap-6 items-center">
-                    <h1 className="text-5xl font-semibold italic">Welcome to the leading source for premium frozen fish. <br /> 
+                    <h1 className="text-3xl md:text-5xl font-semibold italic">Welcome to the leading source for premium frozen fish. <br /> 
                     <span className="text-lg ">
                     Where quality meets unbeatable prices—delivering the freshest catch from sea to your doorstep, all year round.
                     </span>
@@ -160,6 +160,41 @@ const Banner = () => {
                 </div>
             </div>
             </section>
+            {/* how we work */}
+            <section className="mt-20 px-5 md:px-28">
+            <h1 className="text-3xl md:text-4xl text-green-700 text-center font-semibold italic">How Do We Work ?</h1>
+            <p className="text-base text-gray-700 py-3 text-center font-semibold pb-12">Eating fresh and delicious fish has never been easier</p>
+                {/* CARD */}
+                <div className='flex flex-col md:flex-row items-center gap-5 md:gap-28'>
+                    {/* card 1 */}
+                    <div className="card bg-green-300 text-primary-content w-full md:w-96">
+                        <div className="card-body">
+                            <p className='text-gray-900 text-2xl font-semibold'>Free Shipping</p>
+                            <ul className='text-gray-700 text-base text-left'>
+                                <li>Get Free Shipping on all orders over BDT 10,000</li>
+                            </ul>
+                        </div>
+                    </div>
+                    {/* card 2 */}
+                    <div className="card bg-green-300 text-primary-content w-full md:w-96">
+                        <div className="card-body">
+                            <p className='text-black text-2xl font-semibold'>Customer Service</p>
+                            <ul className='text-black text-base text-left'>
+                                <li>24/7 Customer Support . We are ready to help you. </li>
+                            </ul>
+                        </div>
+                    </div>
+                     {/* card 3 */}
+                     <div className="card bg-green-300 text-primary-content w-full md:w-96">
+                        <div className="card-body">
+                            <p className='text-black text-2xl font-semibold'>Fast Delivery</p>
+                            <ul className='text-black text-base text-left'>
+                            <li>Items are dispatched from the Dhaka and will be arrive within 2 days.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
             {/* featred products */}
             <section className='mt-20 px-5 md:px-28'>
                 <h1 className="text-4xl text-green-700 text-center font-semibold italic">To Make Your Best Meal</h1>
@@ -183,7 +218,7 @@ const Banner = () => {
                     <div className="w-full md:w-2/5">
                         <img src={fish} alt="" />
                     </div>
-                    <div className="w-full md:w-3/5 text-right flex flex-col gap-5">
+                    <div className="w-full md:w-3/5 text-center md:text-right flex flex-col gap-5">
                         <h1 className="text-2xl md:text-5xl text-green-700 font-bold italic">Why Frozen Fish is Better?</h1>
                         <p className='text-wrap text-justify'>We are a family-owned company that delivers new, frozen fish right to your door. We currently stock over 200 different items from around the world, enabling us to welcome you into our freezers.
                         Our fish is frozen at sea within 4 hours of being captured, ensuring the freshest and tastiest seafood. Fresh fish takes several days to travel from the water to the supermarket or fishmonger, losing its freshness along the way. Frozen fish retains all of the nutrients and goodness that the same fish would have if eaten fresh from the sea.
@@ -193,20 +228,44 @@ const Banner = () => {
             </section>
             {/* our speciality */}
             <section className='mt-28 px-5 md:px-28'>
-                <div
-                    className="relative w-full h-auto md:h-[400px] flex items-center justify-center"
-                    style={{
-                        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bg3})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                      }}
-                      
-                    >
-                    <div className="relative text-center flex flex-col gap-5 items-center py-5 px-5 md:px-28 text-white">
-                        <h1 className="text-2xl md:text-5xl text-green-400 font-bold">Our Specialty</h1>
-                        <p className='text-wrap text-justify md:text-center'>We offer a wide range of premium frozen fish products, including eel, tuna, and mackerel, all sourced directly from trusted fisheries. Benefit from direct shipments with no broker fees, ensuring the highest quality and freshness. Our stringent quality controls also guarantee no cross-contamination. For more information or to check availability in your region, please contact your local distributor.</p>
-                        <Link to="/about" className="mt-4 px-6 py-2 w-fit bg-green-400 text-white rounded-lg">Learn More</Link>
+                <div>
+                 {/* 1 */}
+                <div className="flex flex-col md:flex-row items-center h-full">
+                    <div className="w-full md:w-1/2 h-full md:h-96 bg-blue-600 opacity-80 text-left flex flex-col justify-center p-12 gap-3">
+                        <h1 className="text-white text-4xl font-semibold">Our Story</h1>
+                        <p className="text-white text-justify">
+                            In 1976, a sport fisherman, business partner, boat captain and gourmet chef joined forces to open The Fish Market. With a pure love of seafood and a single goal in mind, they went on to build one of California’s most beloved seafood institutions.
+                        </p>
                     </div>
+                    <div className="w-full md:w-1/2 h-96">
+                        <img src={bg3} className="w-full h-full object-cover" />
+                    </div>
+                </div>
+                {/* 2 */}
+                <div className="flex flex-col md:flex-row-reverse items-center h-full">
+                    <div className="w-full md:w-1/2  h-full md:h-96 bg-red-600 opacity-80 text-left flex flex-col justify-center p-12 gap-3">
+                        <h1 className="text-white text-4xl font-semibold">Retail Market</h1>
+                        <p className="text-white text-justify">
+                            Our guests can take part in our commitment to high-quality seafood not only by dining with us, but also by shopping at our retail markets. Located in the front of each restaurant location, our skilled ‘marketeers’ assist guests in selecting seafood straight from local boats and fisheries.s.
+                        </p>
+                    </div>
+                    <div className="w-full md:w-1/2 h-96">
+                        <img src={bg2} className="w-full h-full object-cover" />
+                    </div>
+                </div>
+                {/* 1 */}
+                <div className="flex flex-col md:flex-row items-center h-full">
+                    <div className="w-full md:w-1/2  h-full md:h-96 bg-yellow-500 opacity-80 text-left flex flex-col justify-center p-12 gap-3">
+                        <h1 className="text-white text-4xl font-semibold">Community</h1>
+                        <p className="text-white text-justify">
+                            The success of our restaurants is dependent on the success of the communities in which we operate. We endeavor to give back year round by donating gift cards to or serving Fish Market classics at charity fundraisers, through our quarterly Giving Sips program and more.
+                        </p>
+                    </div>
+                    <div className="w-full md:w-1/2 h-96">
+                        <img src={bg7} className="w-full h-full object-cover" />
+                    </div>
+                </div>
+
                 </div>
             </section>
             {/* testimonials */}
