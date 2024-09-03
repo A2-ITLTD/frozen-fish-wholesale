@@ -34,9 +34,9 @@ const Navbar = () => {
                             <Link  to={`/item/5`}><li><a>Tilapia</a></li></Link>
                         </ul>
                         </li>
+                        <li><Link to="/shipping"><a>Shipping & Delivery</a></Link></li>
                         <li><Link to="/contact"><a>Contact Us</a></Link></li>
                         <li><Link to="/about"><a>About Us</a></Link></li>
-                        <li><Link to="/shipping"><a>Shipping & Delivery</a></Link></li>
                     </ul>
                     </div>
                     <Link to="/" className=" text-xl">
@@ -59,9 +59,9 @@ const Navbar = () => {
                         </ul>
                         </details>
                     </li>
+                    <li><Link to="/shipping"><a>Shipping & Delivery</a></Link></li>
                     <li><Link to="/contact"><a>Contact Us</a></Link></li>
                     <li><Link to="/about"><a>About Us</a></Link></li>
-                    <li><Link to="/shipping"><a>Shipping & Delivery</a></Link></li>
                     </ul>
                 </div>
                 {/* <div className="navbar-end">

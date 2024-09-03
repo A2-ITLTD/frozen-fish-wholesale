@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
-
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 const Details = () => {
 
     const [loading, setLoading] = useState(true);
@@ -131,6 +132,19 @@ const Details = () => {
                 </div>
                 {/* other info  */}
                 <div className="w-full text-justify">
+                    {/*extra images */}
+                    <div className=" grid grid-cols-3 gap-4 p-5 rounded-md">
+                        <div>
+                            <img src={newItem.image2} className="rounded-md" />
+                        </div>
+                        <div>
+                            <img src={newItem.image3} className="rounded-md" />
+                        </div>
+                        <div>
+                            <img src={newItem.image4} className="rounded-md" />
+                        </div>
+                            
+                    </div>
                     <h1 className="py-5 text-3xl">Other Instructions</h1>
                     <p>{newItem.Cooking}</p>
                     <p>{newItem.Bake}</p>
