@@ -32,7 +32,7 @@ const Details = () => {
     }
 
     return (
-        <div className="mt-5 md:mt-16 px-5 md:px-28"> 
+        <div className="my-5 md:my-16 px-5 md:px-28"> 
             <div className='text-left text-xl md:text-4xl font-medium pb-0 md:pb-14 text-green-700'>
                 <h1>{newItem.name}</h1>
             </div>

@@ -10,7 +10,7 @@ const AllProducts = () => {
         <div className='mt-12 px-5 md:px-28'>  
            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center items-center'>
             {/* 1 */}
-            <div className="card bg-base-100 w-full md:w-96 h-fulls shadow-xl">
+            <Link to={`/item/1`} className="card bg-base-100 w-full md:w-96 h-fulls shadow-xl">
                 <figure>
                     <img
                     src={i1}
@@ -28,9 +28,9 @@ const AllProducts = () => {
                     <Link to={`/item/1`} className="badge badge-outline bg-green-200 ">Buy Now</Link>
                     </div>
                 </div>
-            </div>
+            </Link>
             {/* 2 */}
-            <div className="card bg-base-100 w-full md:w-96 h-full shadow-xl">
+            <Link  to={`/item/2`}  className="card bg-base-100 w-full md:w-96 h-full shadow-xl">
                 <figure>
                     <img
                     src={i2}
@@ -48,9 +48,9 @@ const AllProducts = () => {
                     <Link to={`/item/2`} className="badge badge-outline bg-green-200 ">Buy Now</Link>
                     </div>
                 </div>
-            </div>
+            </Link>
             {/* 3 */}
-            <div className="card bg-base-100 w-full md:w-96 h-full shadow-xl">
+            <Link to={`/item/3`} className="card bg-base-100 w-full md:w-96 h-full shadow-xl">
                 <figure>
                     <img
                     src={i3}
@@ -68,9 +68,9 @@ const AllProducts = () => {
                     <Link to={`/item/3`} className="badge badge-outline bg-green-200 ">Buy Now</Link>
                     </div>
                 </div>
-            </div>
+            </Link>
             {/* 4 */}
-            <div className="card bg-base-100 w-full md:w-96 h-full shadow-xl">
+            <Link to={`/item/4`} className="card bg-base-100 w-full md:w-96 h-full shadow-xl">
                 <figure>
                     <img
                     src={i4}
@@ -88,9 +88,9 @@ const AllProducts = () => {
                     <Link to={`/item/4`} className="badge badge-outline bg-green-200 ">Buy Now</Link>
                     </div>
                 </div>
-            </div>
+            </Link>
             {/* 5 */}
-            <div className="card bg-base-100 w-full md:w-96 h-full shadow-xl">
+            <Link to={`/item/5`} className="card bg-base-100 w-full md:w-96 h-full shadow-xl">
                 <figure>
                     <img
                     src={i5}
@@ -108,7 +108,7 @@ const AllProducts = () => {
                     <Link to={`/item/5`} className="badge badge-outline bg-green-200 ">Buy Now</Link>
                     </div>
                 </div>
-            </div>
+            </Link>
            </div>
         </div>
     );

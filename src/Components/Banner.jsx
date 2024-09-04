@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import bg10 from "../Images/bg10.jpg";
+import bg11 from "../Images/bg11.jpg";
 import bg1 from "../Images/bg1.jpg";
 import bg2 from "../Images/bg2.jpg";
 import bg3 from "../Images/bg3.jpg";
@@ -29,20 +29,23 @@ const Banner = () => {
         <div >  
            {/* main banner */}
            <section className="relative w-full h-[700px]">
-            <img src={bg1} className='w-full h-full object-cover object-left md:object-center' />
-            <div className='absolute left-5 md:left-28 top-20 md:top-20 text-white flex flex-col justify-center text-center '>
-                <div className="flex flex-col gap-6 items-center">
-                    <h1 className="text-3xl md:text-5xl font-semibold italic">Welcome to the leading source for premium frozen fish. <br /> 
-                    <span className="text-lg ">
-                    Where quality meets unbeatable prices—delivering the freshest catch from sea to your doorstep, all year round.
-                    </span>
-                    </h1>
-                    <div className="divider divider-warning"><FaRegCircleDot className='text-6xl' /></div>
-                    <button className='w-fit items-center text-green-600 font-bold text-3xl hover:text-black bg-white px-8 py-3 rounded-md'>
-                        <Link to="/allproducts">Shop Now</Link>
-                    </button>
+                <img src={bg11} className="w-full h-full object-cover object-left md:object-center" />
+                <div className="absolute inset-0 flex justify-center items-center text-white text-center">
+                    <div className="flex flex-col gap-6 items-center">
+                        <h1 className="text-3xl md:text-5xl font-semibold italic">
+                            Welcome to the leading source for premium frozen fish. <br /> 
+                            <span className="text-lg">
+                                Where quality meets unbeatable prices—delivering the freshest catch from sea to your doorstep, all year round.
+                            </span>
+                        </h1>
+                        <div className="divider divider-warning">
+                            <FaRegCircleDot className="text-6xl" />
+                        </div>
+                        <button className="w-fit text-green-600 font-bold text-3xl hover:text-black bg-white px-8 py-3 rounded-md">
+                            <Link to="/allproducts">Shop Now</Link>
+                        </button>
+                    </div>
                 </div>
-            </div>
             </section>
             {/* alibab button */}
             <section className="my-16 relative w-full h-32 rounded-md flex items-center justify-center">

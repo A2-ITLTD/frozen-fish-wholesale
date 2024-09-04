@@ -5,7 +5,7 @@ const Navbar = () => {
         <div >  
            <div className="navbar bg-base-100 px-5 md:px-28 relative z-50">
                 <div className="navbar-start">
-                    <div className="dropdown">
+                    <div className="dropdown dropdown-hover">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -34,9 +34,9 @@ const Navbar = () => {
                             <Link  to={`/item/5`}><li><a>Tilapia</a></li></Link>
                         </ul>
                         </li>
+                        <li><Link to="/about"><a>About Us</a></Link></li>
                         <li><Link to="/shipping"><a>Shipping & Delivery</a></Link></li>
                         <li><Link to="/contact"><a>Contact Us</a></Link></li>
-                        <li><Link to="/about"><a>About Us</a></Link></li>
                     </ul>
                     </div>
                     <Link to="/" className=" text-xl">
@@ -59,9 +59,9 @@ const Navbar = () => {
                         </ul>
                         </details>
                     </li>
+                    <li><Link to="/about"><a>About Us</a></Link></li>
                     <li><Link to="/shipping"><a>Shipping & Delivery</a></Link></li>
                     <li><Link to="/contact"><a>Contact Us</a></Link></li>
-                    <li><Link to="/about"><a>About Us</a></Link></li>
                     </ul>
                 </div>
                 {/* <div className="navbar-end">
