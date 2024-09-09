@@ -48,16 +48,18 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1 text-lg font-semibold text-green-700">
                     <li><Link to="/"><a>Home</a></Link></li>
                     <li>
-                        <details>
-                        <summary><Link to="/allproducts">Products</Link></summary>
-                        <ul className="p-2 w-72">
+                        <div className="dropdown dropdown-hover dropdown-bottom">
+                            <div tabIndex={0} role="button" className="">
+                                <Link to="/allproducts">Products</Link>
+                            </div>
+                        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-72 p-2 shadow">
                             <Link  to={`/item/1`}><li><a>Shrimps</a></li></Link>
                             <Link  to={`/item/2`}><li><a>Lobster</a></li></Link>
                             <Link  to={`/item/3`}><li><a>Eel</a></li></Link>
                             <Link  to={`/item/4`}><li><a>Mud Crab</a></li></Link>
                             <Link  to={`/item/5`}><li><a>Tilapia</a></li></Link>
                         </ul>
-                        </details>
+                        </div>
                     </li>
                     <li><Link to="/about"><a>About Us</a></Link></li>
                     <li><Link to="/shipping"><a>Shipping & Delivery</a></Link></li>
